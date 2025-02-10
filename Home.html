@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Empowering Teenagers to Explore, Learn, and Thrive">
+  <title>TeenSpire</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode header {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode footer {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode button {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode button:hover {
+      background-color: #555555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <a href="Home.html" class="logo">TeenSpire</a>
+    <div class="nav-container">
+      <div class="nav-buttons">
+        <button onclick="window.location.href='index.html'">Log in</button>
+        <button onclick="window.location.href='index.html'">Create your account now!</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for competitions...">
+        <button onclick="searchCompetitions()">🔍</button>
+      </div>
+      <button onclick="toggleDarkMode()" id="darkModeToggle">🌙</button>
+    </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>EMPOWERING TEENAGERS TO EXPLORE, LEARN, AND THRIVE</h1>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section class="intro">
+      <h2>Start Now!</h2>
+      <p>Welcome, our future changemakers!</p>
+    </section>
+
+    <section class="categories">
+      <div class="category" onclick="window.location.href='competitions.html'">
+        <div class="icon-placeholder">[Image Placeholder]</div>
+        <h3>Competitions!</h3>
+        <p>Are you ready to win? We collect competitions especially for you; take a look!</p>
+      </div>
+      <div class="category" onclick="window.location.href='internships.html'">
+        <div class="icon-placeholder">[Image Placeholder]</div>
+        <h3>Internships!</h3>
+        <p>Ready to employ your creativity in a company or to have experience in advance? What are you waiting for, click the icon!</p>
+      </div>
+      <div class="category" onclick="window.location.href='Opportunities.html'">
+        <div class="icon-placeholder">[Image Placeholder]</div>
+        <h3>Opportunities!</h3>
+        <p>Ready to share your skills with the world? With fair competition with teenagers? Try your luck!</p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <button onclick="window.location.href='contact.html'">Want to contact us?</button>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 TeenSpire | Empowering Teenagers Everywhere</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Change button text/icon based on mode
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️';
+      } else {
+        darkModeToggle.textContent = '🌙';
+      }
+    }
+  </script>
+</body>
+</html>
