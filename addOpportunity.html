@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Opportunity</title>
+    <link rel="stylesheet" href="addOpportunity.css">
+</head>
+<body>
+<!-- Header with Light/Dark Mode Toggle -->
+<header class="header">
+    <h1><a href="index.html" class="logo">TeenSpire</a></h1> <!-- Clickable TeenSpire Logo -->
+    <div class="header-buttons">
+        <button id="dashboardButton" class="dashboard-btn">To Dashboard</button> <!-- Dashboard Button -->
+        <button id="themeToggle" class="theme-toggle">Switch Theme</button>
+    </div>
+</header>
+
+<main class="main-content">
+    <h2>Add New Opportunity</h2>
+    <form id="addOpportunityForm" class="form-container">
+        <input type="text" id="opportunityTitle" placeholder="Opportunity Title" required>
+        <textarea id="opportunityDescription" placeholder="Opportunity Description" required></textarea>
+        <button type="submit" class="submit-btn">Add Opportunity</button>
+    </form>
+</main>
+
+<script src="addOpportunity.js"></script>
+<script>
+    // Light/Dark Mode Toggle
+    const themeToggle = document.getElementById("themeToggle");
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+    });
+
+    // Navigate to Dashboard
+    const dashboardButton = document.getElementById("dashboardButton");
+    dashboardButton.addEventListener("click", () => {
+        window.location.href = "admin_dashboard.html";
+    });
+</script>
+</body>
+</html>

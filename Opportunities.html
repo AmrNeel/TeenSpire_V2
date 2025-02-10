@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Opportunities</title>
+  <link rel="stylesheet" href="opportunities.css">
+</head>
+<body>
+<header class="header">
+  <a href="index.html" class="logo">TeenSpire</a>
+  <button id="themeToggle" class="theme-toggle">Switch Theme</button>
+</header>
+
+<main class="opportunities-container" id="opportunitiesContainer">
+  <!-- Dynamic cards will be added here -->
+</main>
+
+<script src="opportunities.js"></script>
+<script>
+  // Light/Dark Mode Toggle
+  document.getElementById("themeToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+  });
+</script>
+</body>
+</html>

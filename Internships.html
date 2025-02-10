@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships - TeenSpire</title>
+  <link rel="stylesheet" href="theme.css">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode header {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode footer {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode button {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode button:hover {
+      background-color: #555555;
+    }
+
+    .dark-mode .internship-block {
+      background-color: #1f1f1f;
+      border-color: #333333;
+    }
+
+    .dark-mode .internship-details h3 {
+      color: #ffffff;
+    }
+
+    .dark-mode .internship-details p {
+      color: #cccccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <a href="index.html" class="logo">TeenSpire</a>
+    <div class="nav-container">
+      <div class="nav-buttons">
+        <button onclick="window.location.href='signup.html'">Log in</button>
+        <button onclick="window.location.href='signup.html'">Create your account now!</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for internships...">
+        <button onclick="searchInternships()">🔍</button>
+      </div>
+      <button onclick="toggleDarkMode()" id="darkModeToggle">🌙</button>
+    </div>
+  </header>
+
+  <!-- Internships Section -->
+  <main>
+    <section class="internships">
+      <h1>Explore Exciting Internships</h1>
+      <p>Find the best internships curated just for you!</p>
+
+      <div class="internship-grid">
+        <!-- Internship Blocks -->
+        <div class="internship-block">
+          <div class="internship-image">[Image Placeholder]</div>
+          <div class="internship-details">
+            <h3>Internship</h3>
+            <p>Internship</p>
+          </div>
+        </div>
+
+        <div class="internship-block">
+          <div class="internship-image">[Image Placeholder]</div>
+          <div class="internship-details">
+            <h3>Internship</h3>
+            <p>Internship</p>
+          </div>
+        </div>
+
+        <div class="internship-block">
+          <div class="internship-image">[Image Placeholder]</div>
+          <div class="internship-details">
+            <h3>Internship</h3>
+            <p>Internship</p>
+          </div>
+        </div>
+
+        <div class="internship-block">
+          <div class="internship-image">[Image Placeholder]</div>
+          <div class="internship-details">
+            <h3>Internship</h3>
+            <p>Internship</p>
+          </div>
+        </div>
+
+        <div class="internship-block">
+          <div class="internship-image">[Image Placeholder]</div>
+          <div class="internship-details">
+            <h3>Internship</h3>
+            <p>Internship</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Load More Button -->
+      <div class="load-more">
+        <button onclick="loadMoreInternships()">Load More</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 TeenSpire | Empowering Teenagers Everywhere</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Change button text/icon based on mode
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️';
+      } else {
+        darkModeToggle.textContent = '🌙';
+      }
+    }
+
+    function searchInternships() {
+      const input = document.getElementById('searchInput').value;
+      alert('Search functionality is under construction. You searched for: ' + input);
+    }
+
+    function loadMoreInternships() {
+      alert('Loading more internships...');
+    }
+  </script>
+</body>
+</html>

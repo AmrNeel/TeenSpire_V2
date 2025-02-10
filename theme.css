@@ -1,0 +1,617 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #87CEFA; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #FFD700; /* Gold background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0055FF; /* Blue color */
+  text-decoration: none;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-container {
+  display: inline-block; /* Ensure it stays inline */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+}
+
+.nav-buttons {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #0055FF;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-buttons button:hover {
+  background-color: #003399; /* Darker blue */
+}
+
+.search-bar {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 200px;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 0 5px 5px 0;
+  background-color: #FFD700;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #0055FF; /* Blue background */
+  color: #FFF;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.intro h2 {
+  font-size: 2em;
+  color: #0055FF;
+}
+
+.intro p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Categories Section */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category {
+  background-color: #FFF;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.category:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #DDD;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  color: #888;
+}
+
+.category h3 {
+  font-size: 1.5em;
+  color: #0055FF;
+  margin-bottom: 10px;
+}
+
+.category p {
+  font-size: 1em;
+  color: #333;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 20px;
+}
+
+.contact button {
+  background-color: #FFD700;
+  color: #0055FF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background-color: #FFC107; /* Slightly darker gold */
+}
+
+/* Footer */
+footer {
+  background-color: #0055FF;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-buttons button {
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .categories {
+    grid-template-columns: 1fr;
+  }
+}
+---------------
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #87CEFA; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #FFD700; /* Gold background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0055FF; /* Blue color */
+  text-decoration: none;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-container {
+  display: inline-block; /* Ensure it stays inline */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+}
+
+.nav-buttons {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #0055FF;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-buttons button:hover {
+  background-color: #003399; /* Darker blue */
+}
+
+.search-bar {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 200px;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 0 5px 5px 0;
+  background-color: #FFD700;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #0055FF; /* Blue background */
+  color: #FFF;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Competitions Section */
+.competitions {
+  padding: 20px;
+  text-align: center;
+}
+
+.competitions h1 {
+  font-size: 2em;
+  color: #0055FF;
+  margin-bottom: 10px;
+}
+
+.competitions p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.competition-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.competition-block {
+  background-color: #FFF;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.competition-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.competition-image {
+  width: 100%;
+  height: 150px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1em;
+}
+
+.competition-details h3 {
+  font-size: 1.5em;
+  color: #0055FF;
+  margin-bottom: 5px;
+}
+
+.competition-details p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more button {
+  background-color: #FFD700;
+  color: #0055FF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.load-more button:hover {
+  background-color: #FFC107; /* Slightly darker gold */
+}
+
+/* Footer */
+footer {
+  background-color: #0055FF;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-buttons button {
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .competition-grid {
+    grid-template-columns: 1fr;
+  }
+}
+---------------
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #87CEFA; /* Light blue background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #FFD700; /* Gold background */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #0055FF; /* Blue color */
+  text-decoration: none;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-container {
+  display: inline-block; /* Ensure it stays inline */
+  white-space: nowrap; /* Prevent wrapping to the next line */
+}
+
+.nav-buttons {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.nav-buttons button {
+  background-color: #0055FF;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.nav-buttons button:hover {
+  background-color: #003399; /* Darker blue */
+}
+
+.search-bar {
+  display: inline-block; /* Ensure it stays inline */
+  vertical-align: middle;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 200px;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+.search-bar button {
+  padding: 10px;
+  border: 2px solid #0055FF;
+  border-radius: 0 5px 5px 0;
+  background-color: #FFD700;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block; /* Ensure it stays inline */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #0055FF; /* Blue background */
+  color: #FFF;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Internships Section */
+.internships {
+  padding: 20px;
+  text-align: center;
+}
+
+.internships h1 {
+  font-size: 2em;
+  color: #0055FF;
+  margin-bottom: 10px;
+}
+
+.internships p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.internship-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.internship-block {
+  background-color: #FFF;
+  border: 2px solid #FFD700;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.internship-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.internship-image {
+  width: 100%;
+  height: 150px;
+  background-color: #DDD;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1em;
+}
+
+.internship-details h3 {
+  font-size: 1.5em;
+  color: #0055FF;
+  margin-bottom: 5px;
+}
+
+.internship-details p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.load-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more button {
+  background-color: #FFD700;
+  color: #0055FF;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.load-more button:hover {
+  background-color: #FFC107; /* Slightly darker gold */
+}
+
+/* Footer */
+footer {
+  background-color: #0055FF;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-buttons button {
+    font-size: 0.9em;
+    padding: 8px 10px;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .internship-grid {
+    grid-template-columns: 1fr;
+  }
+}

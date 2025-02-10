@@ -1,0 +1,181 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header Styling */
+.header {
+    background-color: #0047ab;  /* Deep Blue */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.theme-toggle {
+    background-color: #ffd700;  /* Yellow */
+    color: #0047ab;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: #ffcc00;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    font-size: 1em;
+    border: 2px solid #0047ab;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffd700;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #0047ab;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #003a8c;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .theme-toggle {
+    background-color: #444;
+    color: #ffd700;
+}
+
+body.dark-mode .theme-toggle:hover {
+    background-color: #555;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #ffd700;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    border-color: #ffcc00;
+}
+
+body.dark-mode .submit-btn {
+    background-color: #ffd700;
+    color: #1e1e1e;
+}
+
+body.dark-mode .submit-btn:hover {
+    background-color: #ffcc00;
+}
+/* Logo Styling */
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    transition: color 0.3s;
+}
+
+.logo:hover {
+    color: #ffd700;  /* Yellow on hover */
+}
+
+/* Header Buttons Layout */
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Dashboard Button Styling */
+.dashboard-btn {
+    background-color: #ffd700;
+    color: #0047ab;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dashboard-btn:hover {
+    background-color: #ffcc00;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode .logo {
+    color: #ffd700;
+}
+
+body.dark-mode .dashboard-btn {
+    background-color: #444;
+    color: #ffd700;
+}
+
+body.dark-mode .dashboard-btn:hover {
+    background-color: #555;
+}
+

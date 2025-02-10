@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact TeenSpire - Let us know how we can help.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TeenSpire</title>
+  <link rel="stylesheet" href="ThemeForContact.css">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #ffffff;
+    }
+
+    .dark-mode header, .dark-mode footer {
+      background-color: #1f1f1f;
+    }
+
+    .dark-mode button {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    .dark-mode button:hover {
+      background-color: #555555;
+    }
+
+    .dark-mode input, .dark-mode textarea {
+      background-color: #333333;
+      color: #ffffff;
+      border: 1px solid #555555;
+    }
+
+    .dark-mode label {
+      color: #cccccc;
+    }
+
+    .dark-mode .hero {
+      background: rgba(0, 0, 0, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">TeenSpire</a>
+    <div class="nav-container">
+      <div class="nav-buttons">
+        <button onclick="window.location.href='signup.html'">Log in</button>
+        <button onclick="window.location.href='signup.html'">Create your account now!</button>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for competitions...">
+        <button onclick="searchCompetitions()">🔍</button>
+      </div>
+      <button onclick="toggleDarkMode()" id="darkModeToggle">🌙</button>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html" class="active-link">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Contact Us</h2>
+      <p>Questions or feedback? Fill out the form below and let us know how we can help.</p>
+      <a href="#contact-section" class="cta-link">Reach Out</a>
+    </div>
+  </section>
+
+  <div class="container" id="contact-section">
+    <section class="section contact-section">
+      <h2>We’d Love to Hear from You</h2>
+      <form 
+        class="contact-form" 
+        action="https://formspree.io/f/myzzbako" 
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="user-name">Name:</label>
+          <input 
+            type="text" 
+            id="user-name" 
+            name="name" 
+            placeholder="Enter your name" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-email">Email:</label>
+          <input 
+            type="email" 
+            id="user-email" 
+            name="email" 
+            placeholder="Enter your email" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-subject">Subject:</label>
+          <input 
+            type="text" 
+            id="user-subject" 
+            name="subject" 
+            placeholder="Enter message subject" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-message">Message:</label>
+          <textarea 
+            id="user-message" 
+            name="message" 
+            rows="5" 
+            placeholder="Your message..." 
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TeenSpire | Empowering Teenagers Everywhere</p>
+  </footer>
+
+  <script>
+    function toggleDarkMode() {
+      const body = document.body;
+      body.classList.toggle('dark-mode');
+
+      // Toggle button text/icon
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      if (body.classList.contains('dark-mode')) {
+        darkModeToggle.textContent = '☀️';
+      } else {
+        darkModeToggle.textContent = '🌙';
+      }
+    }
+
+    function searchCompetitions() {
+      const input = document.getElementById('searchInput').value;
+      alert('Search functionality is under construction. You searched for: ' + input);
+    }
+  </script>
+</body>
+</html>
